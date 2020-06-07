@@ -1,6 +1,7 @@
 from .features.timelog import timelogfun
 from .features.tickets import ticket_func
 from .features.covidcases import covidcasesfun
+from .features.expense_managment import expense_managment
 
 class mediatorCall:
     def __init__(self,msg):
