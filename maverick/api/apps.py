@@ -11,9 +11,14 @@ class Moderator(AppConfig):
 	name = 'moderator'
 
 	def moderator(msg):
+		if (msg == "get_test"):
+			return 'Testing vala'
+		elif (msg == "input.welcome"):
+			return 'Hello ji, django here'
 		try:
 			qa=mediatorCall(msg)
 			output=qa.run_query()
 			return output
 		except:
-			return {'msg':"I don't know what to make of it. Please refer to ReadMe.", 'data': None}
+			return msg
+			# return {'msg':"I don't know what to make of it. Please refer to ReadMe.", 'data': None}
